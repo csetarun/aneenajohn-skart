@@ -8,8 +8,8 @@ import {
 import "./header.css";
 
 export const Header = () => {
-//   const { itemsInCart, dispatch: cartDispatch } = useCart();
-//   const { wishList, dispatch: wishDispatch } = useWishList();
+  const { itemsInCart, dispatch: cartDispatch } = useCart();
+  const { wishList, dispatch: wishDispatch } = useWishList();
   const location = useLocation();
   console.log(location.state);
 
