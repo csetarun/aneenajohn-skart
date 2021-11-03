@@ -1,6 +1,5 @@
 import axios from "axios";
 import { BACKEND_URL } from "../backendUrl";
-import { useCart } from "./cartContext";
 // import { GetPrice } from "./getPrice";
 export const processPayment = async (itemsInCart) => {
   // const { itemsInCart, dispatch: cartDispatch } = useCart();
