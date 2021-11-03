@@ -4,6 +4,8 @@ import { useWishList } from "./WishList/wishContext";
 import { useAuth } from "./Context/authProvider";
 import {
   SET_LOGOUT,
+  SET_WISHLIST_DATA,
+  SET_CART_DATA
 } from "./utils/constants";
 import "./header.css";
 
@@ -25,14 +27,14 @@ export const Header = () => {
     authDispatch({
       type: SET_LOGOUT
     });
-    // cartDispatch({
-    //   type: SET_CART_DATA,
-    //   payLoad: null
-    // });
-    // wishDispatch({
-    //   type: SET_WISHLIST_DATA,
-    //   payLoad: null
-    // });
+    cartDispatch({
+      type: SET_CART_DATA,
+      payLoad: null
+    });
+    wishDispatch({
+      type: SET_WISHLIST_DATA,
+      payLoad: null
+    });
   }
 
   return (
