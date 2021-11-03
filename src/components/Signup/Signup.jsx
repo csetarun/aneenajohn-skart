@@ -2,10 +2,10 @@ import { Header } from "../header";
 import { useReducer } from "react";
 import "../Login/Login.css";
 import { signupReducer } from "../Signup/signupReducer";
-import { useAuth } from "../Context/authProvider";
+// import { useAuth } from "../Context/authProvider";
 import { SET_NEWUSER_INFO } from "../utils/constants";
 import { signUpService } from "../ServerCalls/ServerCalls";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
