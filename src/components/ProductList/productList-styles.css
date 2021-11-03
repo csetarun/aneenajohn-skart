@@ -1,0 +1,70 @@
+.fa-spinner {
+  position: relative;
+  top: 13rem;
+  left: 70%;
+}
+
+/* On screens that are 640px wide or less,do the following*/
+@media screen and (max-width: 640px) {
+  .fa-spinner {
+    width: 30%;
+    height: 50%;
+    left: 60%;
+    top: 10rem;
+  }
+  .container {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-columns: 1fr;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__aside {
+    width: 90%;
+    display: none;
+  }
+
+  .container__aside.active {
+    z-index: 2;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 0px;
+    height: 100%;
+  }
+  .product-filter {
+    position: fixed;
+    left: 77%;
+    bottom: 4%;
+    z-index: 1;
+  }
+  .fab {
+    display: block;
+  }
+  .fab__icon:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter--clear {
+    left: 55%;
+  }
+}
+
+.fa-heart {
+  cursor: pointer;
+}

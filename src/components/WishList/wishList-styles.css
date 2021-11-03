@@ -1,0 +1,26 @@
+.card-container.wish-container {
+  margin: 2rem 0 2rem 6rem;
+}
+
+.card__desc {
+  height: 140px;
+}
+.wish-container .btn--trash {
+  cursor: pointer;
+  position: relative;
+  left: 54%;
+  top: 9%;
+}
+
+.fa-trash-o {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .card-container.wish-container {
+    margin: 0rem;
+  }
+  .btn--trash {
+    left: 50%;
+    top: 10%;
+  }
+}

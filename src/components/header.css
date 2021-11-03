@@ -1,0 +1,113 @@
+.navbar {
+  background: var(--primary-color);
+}
+
+.brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu {
+  top: 16%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: auto;
+}
+
+.app-home {
+  margin-left: 0.5rem;
+}
+
+.login-text,
+.logout-text {
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+/* .nav__link:hover {
+  color: "#FAFF89";
+} */
+
+.icon-badge .icon-badge__wish {
+  background: var(--font-color);
+  color: var(--ow-font-color);
+}
+
+/* .icon-badge__wish:hover {
+  color: "#FAFF89";
+} */
+
+.icon-badge .icon-badge__cart {
+  background: var(--font-color);
+  color: var(--ow-font-color);
+}
+
+.login-text,
+.logout-text {
+  color: var(--ow-font-color);
+}
+.login-text:hover,
+.logout-text:hover {
+  color: var(--font-color);
+}
+
+.wish-header {
+  padding: 1rem;
+}
+.cart {
+  font-size: 25px;
+}
+.icon-badge {
+  position: relative;
+}
+
+.icon-badge .icon-badge__cart {
+  position: absolute;
+  padding: 3px 6px;
+  border: 1.5px solid var(--primary-color);
+  font-size: small;
+  right: -50%;
+  bottom: 34%;
+}
+
+.icon-badge__wish {
+  border-radius: 50%;
+  padding: 1px 4px;
+  border: 1.5px solid var(--primary-color);
+  position: absolute;
+  right: -18%;
+  bottom: 40%;
+}
+
+.fa-shopping-cart--nav {
+  font-size: x-large;
+}
+
+.fa-heart {
+  font-size: x-large;
+}
+
+@media screen and (max-width: 640px) {
+  .cart {
+    margin-right: 1rem;
+  }
+
+  .icon-badge .icon-badge__cart {
+    right: -25%;
+  }
+
+  .icon-badge .icon-badge__wish {
+    right: 0%;
+  }
+
+  .nav__link {
+    color: var(--ow-font-color);
+  }
+
+  .nav__link:hover {
+    color: var(--font-color);
+    /* color: "#FAFF89"; => preferred color */
+  }
+}

@@ -1,0 +1,14 @@
+/* CART */
+
+.total {
+  margin-left: 4rem;
+}
+
+.bill {
+  border: 1px solid var(--font-color);
+  padding: 1.5rem;
+}
+
+.btn--buy-now {
+  margin-right: 8rem;
+}

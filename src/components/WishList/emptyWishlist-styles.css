@@ -1,0 +1,22 @@
+.shopping {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  margin: 2rem 0 2rem 2rem;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .empty {
+    width: 90%;
+  }
+}
