@@ -7,16 +7,13 @@ import { useWishList } from "../WishList/wishContext";
 import { useProduct } from "./productContext";
 import { getFilteredData } from "../Filter/filter";
 import { getSortedData } from "../Filter/sort";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // import { addToCartHandler } from "../ServerCalls/ServerCalls";
 import {
   addToCart,
-  addToWishlist,
-  addToCartHandler,
-  wishlistHandler
-} from "../ServerCalls/ServerCalls";
+  addToWishlist} from "../ServerCalls/ServerCalls";
 import { getTrimmedTitle, isAddedInList, toggleActive } from "../utils/utils";
 import "./productList-styles.css";
 import { useAuth } from "../Context/authProvider";
