@@ -3,17 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import { useWishList } from "./WishList/wishContext";
 import { useAuth } from "./Context/authProvider";
 import {
-  ADD_TO_CART,
   SET_LOGOUT,
-  SET_WISHLIST_DATA,
-  ADD_TO_WISHLIST,
-  SET_CART_DATA
 } from "./utils/constants";
 import "./header.css";
 
 export const Header = () => {
-  const { itemsInCart, dispatch: cartDispatch } = useCart();
-  const { wishList, dispatch: wishDispatch } = useWishList();
+//   const { itemsInCart, dispatch: cartDispatch } = useCart();
+//   const { wishList, dispatch: wishDispatch } = useWishList();
   const location = useLocation();
   console.log(location.state);
 
